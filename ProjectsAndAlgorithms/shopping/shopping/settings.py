@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'shoptest_app',
+    'shopping_cart',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'shopping.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'shoptest_app', 'templates/'), ],
+        'DIRS': [os.path.join(BASE_DIR, 'shoptest_app', 'templates/'), os.path.join(BASE_DIR, 'shopping_cart, templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
